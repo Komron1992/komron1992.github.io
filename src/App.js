@@ -18,18 +18,18 @@ const Portfolio = () => {
       hero: {
         name: 'Komron',
         title: 'Developer',
-        description: 'Web scraping and bot development specialist. Creating solutions for data collection automation and financial services integration.',
+        description: 'Web scraping and bot+MiniApps development specialist. Creating solutions for data collection automation and financial services integration.',
         github: 'GitHub',
         contact: 'Contact'
       },
       about: {
         title: 'About Me',
         greeting: 'Hello! I\'m Komron',
-        description1: 'I specialize in developing solutions for financial data collection automation, creating Telegram bots and web applications. My main focus is working with currency exchange rates of Tajikistan banks and creating convenient tools for users.',
-        description2: 'During my work, I have created more than 18 scrapers for various banks, combined them into a unified Django platform and developed a Telegram bot that helps users quickly get up-to-date information about exchange rates.',
+        description1: 'I specialize in developing solutions for financial data collection automation, creating Telegram bots+MiniApps and web applications. My main focus is working with currency exchange rates of Tajikistan banks and creating convenient tools for users.',
+        description2: 'During my work, I have created more than 18 scrapers for various banks, combined them into a unified Django platform and developed a Telegram bot that helps users quickly get up-to-date information about exchange rates. Also  created a Telegram mini-app for earning points to completing tasks, subscribing to groups and channels, and for being active in chats.',
         stats: {
           scrapers: 'Bank scrapers',
-          bots: 'Telegram bots',
+          bots: 'Telegram bots+MiniApps',
           platform: 'Django platform',
           opensource: 'Open Source'
         }
@@ -59,12 +59,12 @@ const Portfolio = () => {
         title: 'Contact Me',
         description: 'Ready for new projects and interesting opportunities',
         subtitle: 'Let\'s work together!',
-        text: 'If you have an interesting project or are looking for a developer for data collection automation, bot creation or web applications - I\'ll be happy to discuss the details.',
-        email: 'Write email',
+        text: 'If you have an interesting project or are looking for a developer for data collection automation, bot and MiniApps creation or web applications - I\'ll be happy to discuss the details.',
+        email: 'kemeron2016@gmail.com',
         specializations: 'My Specializations',
         skills: [
           'Web scraping and data parsing',
-          'Telegram bot development',
+          'Telegram bot and MiniApps development',
           'Django web applications',
           'Business process automation',
           'API integrations',
@@ -86,7 +86,7 @@ const Portfolio = () => {
       hero: {
         name: 'Комрон',
         title: 'Разработчик',
-        description: 'Специалист по веб-скрейпингу и разработке ботов. Создаю решения для автоматизации сбора данных и интеграции финансовых сервисов.',
+        description: 'Специалист по веб-скрейпингу и разработке ботов и мини приложении в Телеграм. Создаю решения для автоматизации сбора данных и интеграции финансовых сервисов.',
         github: 'GitHub',
         contact: 'Связаться'
       },
@@ -94,10 +94,10 @@ const Portfolio = () => {
         title: 'О себе',
         greeting: 'Привет! Я Комрон',
         description1: 'Я специализируюсь на разработке решений для автоматизации сбора финансовых данных, создании Telegram ботов и веб-приложений. Мой основной фокус - это работа с валютными курсами банков Таджикистана и создание удобных инструментов для пользователей.',
-        description2: 'За время работы я создал более 18 скрейперов для различных банков, объединил их в единую Django платформу и разработал Telegram бота, который помогает пользователям быстро получать актуальную информацию о курсах валют.',
+        description2: 'За время работы я создал более 18 скрейперов для различных банков, объединил их в единую Django платформу и разработал Telegram бота, который помогает пользователям быстро получать актуальную информацию о курсах валют. Также создано мини-приложение Telegram для заработка баллов за выполнение заданий, подписку на группы и каналы, а также за активность в чатах.',
         stats: {
           scrapers: 'Банковских скрейперов',
-          bots: 'Telegram ботов',
+          bots: 'Telegram ботов и Мини Приложении',
           platform: 'Django платформа',
           opensource: 'Open Source'
         }
@@ -132,7 +132,7 @@ const Portfolio = () => {
         specializations: 'Мои специализации',
         skills: [
           'Веб-скрейпинг и парсинг данных',
-          'Разработка Telegram ботов',
+          'Разработка Telegram ботов и Мини приложении',
           'Django веб-приложения',
           'Автоматизация бизнес-процессов',
           'API интеграции',
@@ -161,7 +161,7 @@ const Portfolio = () => {
     {
       id: 2,
       title: "Currency Telegram Bot",
-      description: language === 'en' ? "Telegram bot displaying current exchange rates from various banks of Tajikistan. Users can easily view USD, EUR, RUB and CNY rates" : "Telegram бот, отображающий актуальные курсы валют от различных банков Таджикистана. Пользователи могут легко просматривать курсы USD, EUR, RUB и CNY",
+      description: language === 'en' ? "Telegram bot displaying current exchange rates from various banks of Tajikistan. Users can easily view USD, EUR and RUB rates" : "Telegram бот, отображающий актуальные курсы валют от различных банков Таджикистана. Пользователи могут легко просматривать курсы USD, EUR и RUB",
       category: "main",
       technologies: ["Python", "Telegram API", "Web Scraping"],
       github: "https://github.com/Komron1992/currency_tjkBot",
@@ -170,6 +170,16 @@ const Portfolio = () => {
     },
     {
       id: 3,
+      title: "Telegram MiniApp ",
+      description: language === 'en' ? "Points system for Telegram. This system Automatically awards points to users for messages in Telegram channels and groups, Award points for maintaining subscriptions to channels and groups, Create and complete various tasks to earn points, Track user progress through the leaderboard":"Система баллов для Telegram. Эта система автоматически начисляет баллы пользователям за сообщения в каналах и группах Telegram, начисляет баллы за поддержание подписки на каналы и группы, позволяет создавать и выполнять различные задания для получения баллов, отслеживать прогресс пользователей в таблице лидеров.",
+      category: "main",
+      technologies: ["Python", "FastAPI", "SQLAlchemy", "Pydantic", "APScheduler"],
+      github: "https://github.com/Komron1992/jearn",
+      status: t.projects.status.active,
+      icon: <Bot className="w-6 h-6" />
+    },
+    {
+      id: 4,
       title: "Vixi GPT Bot",
       description: language === 'en' ? "Intelligent Telegram bot with artificial intelligence capabilities" : "Интеллектуальный Telegram бот с возможностями искусственного интеллекта",
       category: "bot",
@@ -190,10 +200,12 @@ const Portfolio = () => {
   const technologies = [
     { name: "Python", level: 95, icon: <Code className="w-5 h-5" /> },
     { name: "Django", level: 90, icon: <Globe className="w-5 h-5" /> },
-    { name: "Vue.js", level: 85, icon: <Code className="w-5 h-5" /> },
+    { name: "Vue.js & React", level: 85, icon: <Code className="w-5 h-5" /> },
     { name: "Web Scraping", level: 98, icon: <Database className="w-5 h-5" /> },
     { name: "Telegram API", level: 92, icon: <Bot className="w-5 h-5" /> },
-    { name: "JavaScript", level: 80, icon: <Code className="w-5 h-5" /> }
+    { name: "JavaScript", level: 80, icon: <Code className="w-5 h-5" /> },
+    { name: "PostgreSQL & SQLAlchemy", level: 80, icon: <Database className="w-5 h-5" /> }
+    { name: "Docker", level: 80, icon: <Boxes className="w-5 h-5" /> }
   ];
 
   useEffect(() => {
@@ -564,7 +576,7 @@ const Portfolio = () => {
                     github.com/Komron1992
                   </a>
                   <a
-                    href="mailto:your.email@example.com"
+                    href="mailto:kemeron2016@gmail.com"
                     className="flex items-center gap-3 text-white/80 hover:text-white transition-colors"
                   >
                     <Mail className="w-5 h-5" />
