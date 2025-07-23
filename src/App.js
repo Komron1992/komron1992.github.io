@@ -204,7 +204,7 @@ const Portfolio = () => {
     { name: "Web Scraping", level: 98, icon: <Database className="w-5 h-5" /> },
     { name: "Telegram API", level: 92, icon: <Bot className="w-5 h-5" /> },
     { name: "JavaScript", level: 80, icon: <Code className="w-5 h-5" /> },
-    { name: "PostgreSQL & SQLAlchemy", level: 80, icon: <Database className="w-5 h-5" /> }
+    { name: "PostgreSQL & SQLAlchemy", level: 80, icon: <Database className="w-5 h-5" /> },
     { name: "Docker", level: 80, icon: <Boxes className="w-5 h-5" /> }
   ];
 
